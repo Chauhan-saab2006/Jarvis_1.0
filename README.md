@@ -24,17 +24,20 @@ Jarvis is a Python-based voice assistant powered by Google's Gemini AI. It liste
 ## Installation
 
 1. **Clone or download the project**
+
    ```bash
    cd e:\VS_DATA\jarvis
    ```
 
 2. **Create and activate a virtual environment**
+
    ```bash
    python -m venv env
    .\env\Scripts\Activate.ps1
    ```
 
 3. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -57,12 +60,14 @@ Jarvis is a Python-based voice assistant powered by Google's Gemini AI. It liste
 ### Note on Quota
 
 The Gemini API has a free tier with limited requests. For production use:
+
 - Upgrade to a paid plan in [Google Cloud Console](https://console.cloud.google.com/)
 - Monitor your usage at https://ai.dev/rate-limit
 
 ## Usage
 
 Run the assistant:
+
 ```bash
 python jarvis.py
 ```
@@ -103,21 +108,25 @@ jarvis/
 ## Troubleshooting
 
 ### "API key not found in environment variables"
+
 - Ensure `.env` file exists in the project root
 - Verify `GOOGLE_API_KEY=your_key` is in the `.env` file
 - Restart the terminal after creating `.env`
 
 ### "Quota exceeded" error
+
 - Your free tier quota has been exhausted
 - Upgrade to a paid Google Cloud plan
 - Check your billing details at [Google Cloud Console](https://console.cloud.google.com/)
 
 ### Microphone not working
+
 - Ensure your microphone is connected and enabled
 - Check Windows microphone permissions
 - Run as administrator if needed
 
 ### Voice recognition fails
+
 - Speak clearly into the microphone
 - Reduce background noise
 - Check internet connection (required for Google Speech Recognition)
@@ -125,6 +134,7 @@ jarvis/
 ## Security Notes
 
 ⚠️ **Never commit your `.env` file to version control**
+
 - The `.gitignore` file protects it automatically
 - Always keep your API key private
 - Regenerate keys if accidentally exposed
@@ -145,6 +155,7 @@ This project is for personal use.
 ## Support
 
 For issues or questions:
+
 1. Check the troubleshooting section above
 2. Review Google Gemini API documentation: https://ai.google.dev/
 3. Check Google Speech Recognition issues: https://github.com/Uberi/speech_recognition
